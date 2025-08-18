@@ -1,0 +1,48 @@
+* Install Nest Js CLI
+  npm i -g @nestjs/cli
+
+* Create New project 
+  nest new NestJS-First-App
+
+* Statr the new project 
+  nest start:dev
+
+* Create Module
+  nest g module users
+
+* Create Contoller
+  nest g controller users
+
+* Create Service
+  nest g service users
+
+* For object mapping reduce the bilerplate code
+  npm i @nestjs/mapped-types -D
+
+* To Validate the DTOs (mapped types and class transformers works together)
+  npm i --save class-validator class-transformer
+
+* Install Prisma for databa configuration
+  npm i prisma -D
+
+* Initiate Prisma(This will create the prisma folder)
+  npx prisma init
+
+* Define the Prisma schema and create the tables in Database.
+  npx prisma migrate dev --name init
+
+* Do changes in prisma file and change existing table(Run this command, then run aboce command with different name) 
+  npx prisma generate
+
+* Imprlementing rate limiting
+  npm i @nestjs/throttler 
+
+* create complete Crud module skeleton
+  nest g resource employees
+
+
+
+
+
+
+   
