@@ -25,7 +25,7 @@ export class UsersController {
     createUser(@Body(ValidationPipe) createUserDto: CreateUserDto){
 
         console.log('Creating user:', createUserDto);
-        return this.usersService.ceateUser(createUserDto);
+        return this.usersService.createUser(createUserDto);
     }
 
     @Patch(':id')
