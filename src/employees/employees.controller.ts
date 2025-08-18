@@ -22,6 +22,7 @@ export class EmployeesController {
   @Get()
   findAll(@Ip() ip:string, @Query('role') role?: 'INTERNS' | 'ADMIN' | 'ENGINEER') {
     this.logger.log(`Fetching all employees From IP\t ${ip}`,EmployeesController.name);
+    
     return this.employeesService.findAll(role);
   }
   
