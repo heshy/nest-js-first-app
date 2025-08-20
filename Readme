@@ -40,6 +40,12 @@
 * create complete Crud module skeleton
   nest g resource employees
 
+* Intall configuration object
+   npm i --save @nestjs/config
+
+* Install type ORM with postgres connection.
+  npm install --save @nestjs/typeorm pg
+
 
 
 
