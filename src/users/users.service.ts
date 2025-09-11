@@ -26,7 +26,7 @@ export class UsersService {
     findOne(id: number) {
         const user = this.users.find(user => user.id === id);
         console.log(`User found: ${JSON.stringify(user)}`);
-        if(!user) throw new NotFoundException(`User with id ${id} not foundsss`);
+        if(!user) throw new NotFoundException(`User with id ${id} not foundssss`);
         return user;
     }
 
