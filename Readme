@@ -40,6 +40,15 @@
 * create complete Crud module skeleton
   nest g resource employees
 
+* Docker Build
+  
+  docker rm -f nest-app
+  docker build -t nest-js-first-app:latest .
+  docker run -d --name nest-app -p 3000:3000 --env-file .env nest-js-first-app:latest
+
+  docker logs -f nest-app --since=10s
+
+
 
 
 
